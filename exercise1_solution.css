@@ -12,7 +12,7 @@ ul {
 
 @font-face {
     font-family: "Oswald";
-    src: url(../Fuentes/Oswald-VariableFont_wght.ttf);
+    src: url(../PruebaDesdeVisual/Fuentes/Oswald-VariableFont_wght.woff2), url(../Fuentes/Oswald-VariableFont_wght.ttf);
     font-style: normal;
     font-weight: normal;
 
