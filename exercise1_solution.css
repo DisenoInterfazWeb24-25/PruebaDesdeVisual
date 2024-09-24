@@ -6,18 +6,15 @@
     --quaternary: hsl(0, 9%, 87%);
 }
 
-
-
 body,
 header,
 footer,
 nav,
+main,
+section,
 ul {
     margin: 0;
     padding: 0;
-
-
-
 }
 
 @font-face {
@@ -36,27 +33,30 @@ ul {
 
 }
 
-
-
-
-
 body {
+
     font-family: Arial, sans-serif;
     background-color:var(--quaternary);
     color: #000000;
+    display: flex;
+    flex-direction: column;
+    
+    
 }
 
 footer {
+
     background-color: var(--tertiary);
-    text-align: center;
     padding: 20px;
     color: hsl(0, 0%, 100%);
+    
 }
 
 header {
     text-align: center;
     padding: 20px;
     background-color:var(--primary);
+    width:  100%;
 }
 
 
@@ -67,10 +67,19 @@ h1 {
 
 }
 
+@media screen and (max-width: 650px) {
+
+    main{
+        
+        display: inline-block;
+    }
+  }
+  
 nav ul {
     list-style-type: none;
     background-color:var(--secondary);
     padding: 10px;
+   
 }
 
 nav ul li {
@@ -82,13 +91,19 @@ nav ul li a {
     color: hsl(0, 0%, 100%)
 }
 
+main
+{
+    display: flex;
+    flex-direction: row;
+}
+
 section {
     margin: 40px;
     padding: 20px;
     border: 1px solid #949494;
     border-radius: 5px;
     background-color: hsl(0, 0%, 100%);
-
+    
 }
 
 section h2 {
